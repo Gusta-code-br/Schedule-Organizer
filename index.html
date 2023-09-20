@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Scheduler</title>
+</head>
+<body>
+    <header>
+        <div class="back-header">
+            <button id="btn-1">📚Notebook</button>
+            <button id="btn-2">💻Courses</button>
+            <button id="btn-3">Something</button>
+            <button id="btn-4">Something</button>
+            <button id="btn-5">Something</button>
+            <button id="btn-6">Something</button>
+    </div>
+    </header>
+    <div class="corpo-da-pagina">
+        <section class="daily-observation">
+            <div class="header-daily-observation">
+                <h1>Observation</h1>
+                <button class="plus" id="btn-textbox" onclick="OpenEditor()">+</button>
+            </div>
+            
+            <p class="textarea" id="texto-obs">
+
+            </p>
+        </section>
+        <div class="week">
+            <div class="dia">
+                <div class="header-week-days">
+                    <h1>Monday</h1>
+                    <button class="plus-week">+</button>
+                </div>
+                
+            </div>
+            <div class="dia">
+                <div class="header-week-days">
+                    <h1>Tuesday</h1>
+                    <button class="plus-week">+</button>
+                </div>
+                <p class="daily-activity"></p>
+            </div>
+            <div class="dia">   
+                <div class="header-week-days">
+                    <h1>Wednesday</h1>
+                    <button class="plus-week">+</button>
+                </div>
+                <p class="daily-activity"></p>
+            </div>
+            <div class="dia">
+                <div class="header-week-days">
+                    <h1>Thursday</h1>
+                    <button class="plus-week">+</button>
+                </div>
+                <p class="daily-activity"></p>
+            </div>
+        </div>
+    </div>
+    <textarea name="texto-observacao" id="observacao" cols="30" rows="10"></textarea>
+    <button class="btn-send" id="btn-send" onclick="Save()">OK</button>
+</body>
+</html>
